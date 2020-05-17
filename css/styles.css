@@ -60,9 +60,10 @@ ul {
   padding: 0;
 }
 
-/* .work-list > .image {
+
+img {
   display: block;
-  } */
+  }
 
 /* Header */
 
@@ -71,8 +72,6 @@ ul {
   padding-right: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 94px;
-  margin-bottom: 94px;
   width: 1230px;
   outline: 2px solid tomato;
 }
@@ -83,6 +82,7 @@ ul {
 
 .page-container {
   display: flex;
+  align-items: center;
 
   margin-left: auto;
   margin-right: auto;
@@ -113,19 +113,17 @@ ul {
   display: flex;
 }
 
-
-
 .site-nav.list {
   display: flex;
 }
 
-/* .page-contacts {
+.page-contacts {
   display: flex;
-} */
+}
 
 .site-nav-li {
-  display: block;
-  margin-right: 50px;
+  display: flex;
+  margin-left: 86px;
   padding-top: 32px;
   padding-bottom: 32px;
   }
@@ -165,9 +163,18 @@ ul {
 
 .email-and-phone {
   display: flex;
+
+  margin-left: auto;
+  align-items: center;
+}
+
+.nav-image {
+  display: inline-flex;
+  margin-right: 10px;
 }
 
 .email {
+  margin-right: 31px;
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -182,8 +189,6 @@ ul {
 }
 
 .phone {
-  margin-left: 50px;
-
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -200,6 +205,8 @@ ul {
 
 /* Hero */
 .hero {
+  padding-bottom: 94px;
+
   text-align: center;
 }
 
@@ -221,7 +228,7 @@ ul {
 .test > .item:nth-child(2n+4) {
   /* Настоящий цвет, но будет другой, чтоб не сливалось */
   /* background-color: var(--secondary-background-and-button-color); */
-  background-color: var(--fone-color);
+  background-color: rgb(226, 194, 194);
 }
 
 /* .test > .item {
@@ -234,6 +241,7 @@ ul {
 .work-title,
 .team-title,
 .clients {
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -241,12 +249,21 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
-/* .section,
-.work,
-.clients,
-.team {
+
+.section {
   padding-top: 94px;
-  padding-bottom: 94px; */
+  padding-bottom: 94px;
+}
+
+.section-list {
+ display: flex;
+ justify-content: space-between;
+ align-items: baseline;
+}
+
+.section-item {
+  width: 278px;
+}
 
 .section-text {
   color: var(--primary-text-color);
@@ -258,6 +275,7 @@ ul {
   }
 
 .undersection {
+  margin-top: 30px;
 
   font-weight: 700;
   font-size: 14px;
@@ -267,8 +285,17 @@ ul {
 }
 
 /* Чем мы занимаемся */
+
+.work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .work-list {
   color: var(--header-and-text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 .work .work-ref {
   color: var(--header-and-text-color);
@@ -298,6 +325,13 @@ ul {
   margin-top: 0;
   width: 1230px;
   outline: 2px solid tomato;
+
+
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: baseline; */
 }
 
 .team .team-text {
@@ -311,6 +345,8 @@ ul {
 }
 
 .team-member {
+  padding-top: 30px;
+  padding-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -319,15 +355,38 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.social-networks {
+  display: flex;
+  margin-top: 28px;
+  justify-content: space-around;
+}
+
+.sfooter {
+  margin-top: 0px;
+}
+
 /* Постоянные клиенты */
 
-/* .container.no-bottom-margin {
-  margin-bottom: 0;
-} */
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
+.clients {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
 /* Footer */
 
 .logo-bottom {
+  display: inline-flex;
+  margin-top: 48px;
+  margin-bottom: 10px;
   color: var(--header-and-text-color);
 
   font-family: Raleway bold, sans-serif;
@@ -339,6 +398,25 @@ ul {
 
 .footer {
   background-color: var(--footer-color);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  outline: 2px solid tomato;
+}
+
+.footer-frame {
+  display: block;
+}
+
+.footer-adress {
+  display: block;
 }
 
 .footer .footer-adress1 {
@@ -362,6 +440,17 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.join-container {
+  display: block;
+  width: 206px;
+}
+
+.join {
+  display: inline-flex;
+  margin-top: 56px;
+  margin-bottom: 21px;
+}
+
 .footer .join {
   color: var(--header-and-text-color);
 
@@ -371,6 +460,24 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.container-subscribe {
+  display: block;
+}
+
+.subscribe {
+  display: inline-flex;
+  margin-top: 56px;
+  margin-bottom: 21px;
+}
+
+.auth-nav {
+  display: flex;
+}
+
+.input {
+  margin-right: 12px;
 }
 
 .footer .subscribe {
@@ -384,6 +491,11 @@ ul {
   text-transform: uppercase;
 }
 /* или же копирайт */
+
+/* .developed-container {
+
+} */
+
 .developed {
   color: rgba(255, 255, 255, 0.4);
 
@@ -404,7 +516,7 @@ ul {
   border-radius: 4px;
   padding: 10px 32px;
   display: inline-block;
-  min-width: 200px;
+  min-width: 136px;
   /* height: 50px; */
 
 
@@ -418,6 +530,7 @@ ul {
   }
 
 .button.primary {
+
   color: var(--header-and-text-color);
   background-color: var(--accent-color);
   border-color: transparent;
