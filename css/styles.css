@@ -63,6 +63,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
   }
 
 /* Header */
@@ -575,16 +576,20 @@ img {
 .filter {
   padding-left: auto;
   padding-right: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 15px;
+  margin-right: 15px;
   margin-top: 94px;
   margin-bottom: 50px;
-  width: 1230px;
+  width: 1200px;
   outline: 2px solid tomato;
 }
 
 
 /* Основная часть портфолио */
+
+/* 3 варианта выполнения. 1 - стандарт фиксированной верстки.
+2 - через calc - width: calc((100%-60px(потому что 2 марджина) / 3(делим на количество столбцов, в данном случае - 3));
+3 - контейнеру задаем марджин -15 пикселей, а ребенку margin: 15px; Работает отлично только тогда, когда у нас нет фона. */
 
 .portfolio {
   padding-left: 15px;
@@ -593,7 +598,7 @@ img {
   margin-right: auto;
   margin-top: 0 px;
   margin-bottom: 94px;
-  width: 1230px;
+  width: 1200px;
   outline: 2px solid tomato;
 
   color: var(--title-text-color)
@@ -613,6 +618,7 @@ img {
 
 .portfolio-element:nth-child(3n) {
   margin-right: 0;
+  background-color: greenyellow;
 }
 
 .portfolio-element:nth-last-child(-n + 3) {
@@ -665,7 +671,7 @@ img {
   margin-right: auto;
   margin-top: 94px;
   margin-bottom: 50px;
-  width: 1230px;
+  width: 1200px;
   outline: 2px solid tomato;
 }
 
