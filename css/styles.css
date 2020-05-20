@@ -66,6 +66,15 @@ img {
   max-width: 100%;
   }
 
+  .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    …
+  }
+
 /* Header */
 
 .container {
@@ -569,27 +578,48 @@ img {
   background-color: var(--accent-color);
 } */
 
+
+
+
+
+
 /* ПОРТФОЛИО */
 
 /* Скрытый заголовок, Фильтр */
 
 .filter {
-  padding-left: auto;
-  padding-right: auto;
-  margin-left: 15px;
-  margin-right: 15px;
+  /* display: flex; */
+
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 94px;
   margin-bottom: 50px;
   width: 1200px;
   outline: 2px solid tomato;
 }
 
+.filter-button-block {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-element {
+  margin-right: 8px;
+}
+
+.filter-element:last-child {
+      margin-right: 0;
+  }
+
 
 /* Основная часть портфолио */
 
 /* 3 варианта выполнения. 1 - стандарт фиксированной верстки.
-2 - через calc - width: calc((100%-60px(потому что 2 марджина) / 3(делим на количество столбцов, в данном случае - 3));
+2 - через calc - width: calc((100% - 60px) / 3); - width: calc((100%-60px(потому что 2 марджина) / 3(делим на количество столбцов, в данном случае - 3));
 3 - контейнеру задаем марджин -15 пикселей, а ребенку margin: 15px; Работает отлично только тогда, когда у нас нет фона. */
+/* Но фон можно дать на секцию, а не на этот контейнер, на его родителя. */
 
 .portfolio {
   padding-left: 15px;
@@ -598,7 +628,7 @@ img {
   margin-right: auto;
   margin-top: 0 px;
   margin-bottom: 94px;
-  width: 1200px;
+  width: 1170px;
   outline: 2px solid tomato;
 
   color: var(--title-text-color)
@@ -607,11 +637,11 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-
+  /* margin: -15px; */
 }
 
 .portfolio-element {
-  width: 370px;
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -664,14 +694,4 @@ img {
 
 /* Скрытый заголовок */
 
-.filter {
-  padding-left: auto;
-  padding-right: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 94px;
-  margin-bottom: 50px;
-  width: 1200px;
-  outline: 2px solid tomato;
-}
 
