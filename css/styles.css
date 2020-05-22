@@ -78,11 +78,11 @@ img {
 /* Header */
 
 .container {
-  padding-left: auto;
-  padding-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1170px;
   outline: 2px solid tomato;
 }
 
@@ -94,9 +94,11 @@ img {
   display: flex;
   align-items: center;
 
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1170px;
   outline: 2px solid tomato;
 }
 
@@ -263,6 +265,7 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  border-bottom: 1px solid var(--fone-color);
 }
 
 .section-list {
@@ -272,7 +275,7 @@ img {
 }
 
 .section-item {
-  width: 278px;
+  width: 270px;
 }
 
 .section-text {
@@ -328,12 +331,12 @@ img {
   }
 
 .team-container {
-  padding-left: auto;
-  padding-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  width: 1230px;
+  width: 1170px;
   outline: 2px solid tomato;
 
 
@@ -417,7 +420,9 @@ img {
 
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1170px;
   outline: 2px solid tomato;
 }
 
@@ -596,7 +601,7 @@ img {
   margin-right: auto;
   margin-top: 94px;
   margin-bottom: 50px;
-  width: 1200px;
+  width: 1170px;
   outline: 2px solid tomato;
 }
 
