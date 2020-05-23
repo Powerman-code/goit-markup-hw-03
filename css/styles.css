@@ -347,6 +347,8 @@ img {
   /* align-items: baseline; */
 }
 
+/* .team-element */
+
 .team .team-text {
   color: var(--primary-text-color);
 
@@ -430,11 +432,14 @@ img {
   display: block;
 }
 
-.footer-adress {
-  display: block;
-}
+/* .footer-adress {
+
+} */
 
 .footer .footer-adress1 {
+  display: flex;
+  flex-direction: column;
+
   color: var(--header-and-text-color);
 
   font-style: normal;
@@ -445,6 +450,7 @@ img {
 }
 
 .footer .footer-adress2 {
+  margin-top: 9px;
   color: rgba(255, 255, 255, 0.6);
 
   font-family: Roboto;
@@ -505,15 +511,23 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-/* или же копирайт */
+
 
 /* .developed-container {
 
 } */
-
-.developed {
+.copyright {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 18px;
   padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.developed {
+
+
   color: rgba(255, 255, 255, 0.4);
 
   font-style: normal;
